@@ -7,7 +7,7 @@ pip install Pillow
 ```
 ### Rules to contribute
 
-Check out these [Contributing Guidelines](https://github.com/charan2308/weatherforecast/blob/main/CONTRIBUTION.md) to learn more!
+Check out these [Contributing Guidelines](https://github.com/acmpesuecc/was_a_game/blob/main/CONTRIBUTION.md) to learn more!
 
 ***
 This repo is for the ACM PESU-ECC Hacknight 5.0 2023. If you require any help or have any queries, contact the maintainer in charge:
