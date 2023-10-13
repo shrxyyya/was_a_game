@@ -42,7 +42,7 @@ def start():
     c_window = f.create_window(20, 10, anchor=NW, window=st)
     st.insert(END, "WELCOME TO TEXT BASED ADVENTURE GAME")
     st.insert(END,
-              "\nYou are lancelot and the town people call you engineering god because of your ingenious inventions.\nYou made your fortune by your inventions")
+              "\nYou are lancelot and the town people call you the engineering god because of your ingenious inventions.\nYou made your fortune by your inventions")
     st.insert(END,
               "\nOne day you wake up and see that all your fortune has been stolen from your safe , and there is no sign of your wife.\n you search the whole house for clues but wont find any")
     c1_window = f.create_window(20, 350, anchor=NW, window=I)
@@ -53,7 +53,7 @@ def start():
         def check1():
             st.insert(END, "there is a letter and a pouch of gold")
             st.insert(END,
-                      "\t\t\t  LETTER\nahhh lancelot i am the one who stole ur fortune .\nU and your arogant behaviour was making me sick it serves u right")
+                      "\t\t\t  LETTER\nahhh lancelot!! i am the one who stole ur fortune .\nYou and your arrogant behaviour was making me sick so it serves u right")
             c12 = Checkbutton(gg, text="look around for more clues")
             c13 = Checkbutton(gg, text="go back")
             c12_window = f.create_window(850, 450, anchor=NW, window=c12)
@@ -65,21 +65,36 @@ def start():
                 c13.destroy()
                 c1_window = f.create_window(20, 350, anchor=NW, window=I8)
                 st.insert(END,
-                          "\n hmm let me look around \n wait is that gold.... \n there is a trail of gold here!!....  ")
+                          "\n hmm let me look around \n wait is that gold??.... \n there is a trail of gold here!!....  ")
                 st.insert(END,
-                          " \n FOLLOWING THE GOLD COIN TRAIL\nhmm the apparatus, its a living thing which uses pure metal as blood ./n It looks down for some reason and its following me from the start of the trail i wonder why\n well i have to find the one who took my  fortune \n   CONTINUES TO FOLLOW THE TRAIL\nyou:AHHH i found my fortune\nyou: whaat.. are you doing here emma\nEmma:hi lancelot i was the one who took wour fortune \n you: that explains why the safe was not damaged \n Emma : you were so  polite and kind when you were inventing but now you have become arrogant and rude  because of your fortune.Your not the lancelot that i knew\nyou : so we are on our ways now \nEmma: i will be waiting\nyou: hmm i offered my to people who needed it but they refused it now what will i do with this money \nThe apparatuse maintains the land there is no doubt that there is spikes every where \nmaybe i will give the gold to the appratus and save its life")
+                          " \n FOLLOWING THE GOLD COIN TRAIL\nhmm the apparatus, its a living thing which uses pure metal as blood ./n It looks down for some reason and it has been following me from the start of the trail i wonder why?\n well, I have to find the one who took my fortune \n   CONTINUES TO FOLLOW THE TRAIL\nyou:AHHH!! i found my fortune!!\nyou: whaat.. are you doing here emma??\nEmma:hi lancelot i was the one who took wour fortune \n you: that explains why the safe was not damaged \n Emma : you were so  polite and kind when you were inventing but now you have become arrogant and rude  because of your fortune.You are not the lancelot that i knew\nyou : so we are on our ways now ig? \nEmma: i will be waiting\nyou: hmm i offered my fortune to alot of people who might have needed it but they refused it. Now what will i do with this money? \nThe apparatus maintains the land there is no doubt that there is spikes every where \nmaybe i will give it the gold and save his life")
                 st.yview(END)
                 def s7():
                     st.insert(END,
-                              "\n \n would u like to save the apparatus ")
+                              "\n \n would u like to save the apparatus? ")
                     ic = Checkbutton(gg, text="y")
-                    ic1 = Checkbutton(gg, text="y")
+                    ic1 = Checkbutton(gg, text="n")
                     ic_window = f.create_window(850, 450, window=ic, anchor=NW)
                     ic1_window = f.create_window(
                         850, 500, window=ic1, anchor=NW)
                     st.yview(END)
                     def b():
                         st.insert(END, "\nthe apparatus (-_-)->(>_<)->(*,*) ")
+                        st.insert(END,"\n*the apparatus is happy*")
+                        st.insert(END,"\n the apparatus thanks lancelot for saving his life and making it happy!!\n")
+                        st.insert(END,"""\n ON IN HIS WAY BACK FROM THE TRAIL\n 
+                                  Emma: I was waiting for you here
+                                  you: so you didnt go your way
+                                  Emma: So you decided to help apparatus
+                                  you: yes
+                                  Emma: It's great to see you changed back to the lancelot i knew
+                                  you: yes.....i think it would be for the better
+                                  Emma: are you sure you wouldnt change for a long time?""")
+                        cx = Checkbutton(gg, text="y")
+                        cy = Checkbutton(gg, text="n")
+                        cx_window = f.create_window(850, 450, anchor=NW, window=cx)
+                        cy_window = f.create_window(850, 500, anchor=NW, window=cy)
+                        
                         f.create_text(
                             1000, 480, text="please give feedback of the game", fill="yellow")
                         T = Entry(gg, width=40)
@@ -151,7 +166,7 @@ def start():
                             st.insert(
                                 END, "hmm there is a paper,lets see what is written in that ")
                             st.insert(END,
-                                      "THE APPATRAUS \nIS living thing which uses pure metal as blood.\nIt keeps the land in order,other wise the land will be filled with thorns and traps ")
+                                      "THE APPARATUS \nis a living thing which uses pure metal as blood.\nIt keeps the land in order,other wise the land will be filled with thorns and traps ")
                             seeCart()
                             st.yview(END)
 
@@ -225,7 +240,7 @@ def start():
                 st.yview(END)
 
                 def noInfo():
-                    st.insert(END, "\n no usefull information")
+                    st.insert(END, "\n no useful information")
                     c3.destroy()
                     c4.destroy()
                     leave()
@@ -283,7 +298,7 @@ def start():
 
                                     def homeWindow():
                                         st.insert(
-                                            END, "  \n hmm the bulding windoes are not damaged ")
+                                            END, "  \n hmm the bulding windows are not damaged ")
                                         c7.destroy()
                                         c8.destroy()
                                         c9.destroy()
@@ -301,7 +316,7 @@ def start():
 
                                     def cart():
                                         st.insert(END,
-                                                  "\n hmm cart trails hmm i guess they used a cart to steal my fortune")
+                                                  "\n hmm cart trails hmm I guess they used a cart to steal my fortune")
                                         c7.destroy()
                                         c8.destroy()
                                         c9.destroy()
