@@ -47,6 +47,7 @@ def start():
               "\nOne day you wake up and see that all your fortune has been stolen from your safe , and there is no sign of your wife.\n you search the whole house for clues but wont find any")
     c1_window = f.create_window(20, 350, anchor=NW, window=I)
     st.insert(END, "\nWhat do you want to do?")
+    st.yview(END)
 
     def lastpart():
         def check1():
@@ -57,6 +58,7 @@ def start():
             c13 = Checkbutton(gg, text="go back")
             c12_window = f.create_window(850, 450, anchor=NW, window=c12)
             c13_window = f.create_window(850, 500, anchor=NW, window=c13)
+            st.yview(END)
 
             def last():
                 c12.destroy()
@@ -66,7 +68,7 @@ def start():
                           "\n hmm let me look around \n wait is that gold.... \n there is a trail of gold here!!....  ")
                 st.insert(END,
                           " \n FOLLOWING THE GOLD COIN TRAIL\nhmm the apparatus, its a living thing which uses pure metal as blood ./n It looks down for some reason and its following me from the start of the trail i wonder why\n well i have to find the one who took my  fortune \n   CONTINUES TO FOLLOW THE TRAIL\nyou:AHHH i found my fortune\nyou: whaat.. are you doing here emma\nEmma:hi lancelot i was the one who took wour fortune \n you: that explains why the safe was not damaged \n Emma : you were so  polite and kind when you were inventing but now you have become arrogant and rude  because of your fortune.Your not the lancelot that i knew\nyou : so we are on our ways now \nEmma: i will be waiting\nyou: hmm i offered my to people who needed it but they refused it now what will i do with this money \nThe apparatuse maintains the land there is no doubt that there is spikes every where \nmaybe i will give the gold to the appratus and save its life")
-
+                st.yview(END)
                 def s7():
                     st.insert(END,
                               "\n \n would u like to save the apparatus ")
@@ -75,7 +77,7 @@ def start():
                     ic_window = f.create_window(850, 450, window=ic, anchor=NW)
                     ic1_window = f.create_window(
                         850, 500, window=ic1, anchor=NW)
-
+                    st.yview(END)
                     def b():
                         st.insert(END, "\nthe apparatus (-_-)->(>_<)->(*,*) ")
                         f.create_text(
@@ -86,6 +88,7 @@ def start():
                         h = Button(gg, text="enter")
                         h_window = f.create_window(
                             900, 550, anchor=NW, window=h)
+                        st.yview(END)
 
                         def read():
                             l = []
@@ -114,6 +117,7 @@ def start():
                         850, 450, window=c10, anchor=NW)
                     c11_window = f.create_window(
                         850, 500, window=c11, anchor=NW)
+                    st.yview(END)
 
                     def seeCart():
                         c1_window = f.create_window(
@@ -130,6 +134,7 @@ def start():
                         c16 = Checkbutton(gg, text="go back")
                         c16_window = f.create_window(
                             850, 550, window=c16, anchor=NW)
+                        st.yview(END)
 
                         def SeeCart2():
                             c14.destroy()
@@ -137,6 +142,7 @@ def start():
                             c16.destroy()
                             st.insert(END, "\n chest is open")
                             seeCart()
+                            st.yview(END)
 
                         def apparatus():
                             c14.destroy()
@@ -147,12 +153,14 @@ def start():
                             st.insert(END,
                                       "THE APPATRAUS \nIS living thing which uses pure metal as blood.\nIt keeps the land in order,other wise the land will be filled with thorns and traps ")
                             seeCart()
+                            st.yview(END)
 
                         def bh():
                             c14.destroy()
                             c15.destroy()
                             c16.destroy()
                             TrailAction()
+                            st.yview(END)
 
                         c14.configure(command=SeeCart2)
                         c15.configure(command=apparatus)
@@ -162,6 +170,7 @@ def start():
                         c10.destroy()
                         c11.destroy()
                         last()
+                        st.yview(END)
 
                     c10.configure(command=seeCart)
                     c11.configure(command=pree)
@@ -172,6 +181,7 @@ def start():
                 c12.destroy()
                 c13.destroy()
                 go()
+                st.yview(END)
 
             c12.configure(command=last)
             c13.configure(command=last2)
@@ -183,12 +193,14 @@ def start():
         c_window = f.create_window(850, 450, window=c1, anchor=NW)
         c2 = Checkbutton(gg, text="2)go to the bar")
         c_window = f.create_window(850, 500, window=c2, anchor=NW)
+        st.yview(END)
 
         def postOffice():
             st.insert(END, "\nThere are no letters for you")
             c1.destroy()
             c2.destroy()
             beginning()
+            st.yview(END)
 
         def bar():
             c1_window = f.create_window(20, 350, anchor=NW, window=I3)
@@ -199,6 +211,7 @@ def start():
                                 baxter: hmm what if some one you close to you did it cause
                                 no one knows how your inventions work.
                                 you: hmm you have a good point.""")
+            st.yview(END)
             c1.destroy()
             c2.destroy()
 
@@ -209,12 +222,14 @@ def start():
                 c_window = f.create_window(850, 450, window=c3, anchor=NW)
                 c4 = Checkbutton(gg, text="2)leave the bar")
                 c_window = f.create_window(850, 500, window=c4, anchor=NW)
+                st.yview(END)
 
                 def noInfo():
                     st.insert(END, "\n no usefull information")
                     c3.destroy()
                     c4.destroy()
                     leave()
+                    st.yview(END)
 
                 def leaveBar():
                     c3.destroy()
@@ -229,6 +244,7 @@ def start():
                             850, 450, window=c5, anchor=NW)
                         c_window = f.create_window(
                             850, 500, window=c6, anchor=NW)
+                        st.yview(END)
 
                         def Headman():
                             c5.destroy()
@@ -236,9 +252,11 @@ def start():
                             st.insert(END,
                                       "\n you lodge a complaint about the robbery and the headman promises to do as much as he can.")
                             inner()
+                            st.yview(END)
 
                         def home():
                             st.insert(END, "\nAT HOME")
+                            st.yview(END)
 
                             def checkHome():
                                 c5.destroy()
@@ -261,6 +279,7 @@ def start():
                                         850, 500, window=c8, anchor=NW)
                                     c9_window = f.create_window(
                                         850, 550, window=c9, anchor=NW)
+                                    st.yview(END)
 
                                     def homeWindow():
                                         st.insert(
@@ -269,6 +288,7 @@ def start():
                                         c8.destroy()
                                         c9.destroy()
                                         inner1()
+                                        st.yview(END)
 
                                     def safe():
                                         st.insert(END,
@@ -277,6 +297,7 @@ def start():
                                         c8.destroy()
                                         c9.destroy()
                                         inner1()
+                                        st.yview(END)
 
                                     def cart():
                                         st.insert(END,
@@ -284,6 +305,7 @@ def start():
                                         c7.destroy()
                                         c8.destroy()
                                         c9.destroy()
+                                        st.yview(END)
 
                                         def TrailAction():
                                             st.insert(
@@ -298,6 +320,7 @@ def start():
                                                 850, 450, window=c10, anchor=NW)
                                             c11_window = f.create_window(
                                                 850, 500, window=c11, anchor=NW)
+                                            st.yview(END)
 
                                             def seeCart():
                                                 c10.destroy()
@@ -306,6 +329,7 @@ def start():
                                                     END, "\nhmm a clearing and there is a cart ")
                                                 c1_window = f.create_window(
                                                     2000, 350, anchor=NW, window=I7)
+                                                st.yview(END)
 
                                                 def checkCart():
                                                     c1_window = f.create_window(
@@ -320,6 +344,7 @@ def start():
                                                         f, text="n")
                                                     l2_window = f.create_window(
                                                         850, 500, window=l2, anchor=NW)
+                                                    st.yview(END)
 
                                                     def chestOpenTrial():
                                                         l1.destroy()
@@ -336,6 +361,7 @@ def start():
                                                                 f, text="see the paper")
                                                             o2_window = f.create_window(
                                                                 850, 500, window=o2, anchor=NW)
+                                                            st.yview(END)
 
                                                             def puzzleSolve():
                                                                 o1.destroy()
@@ -352,6 +378,7 @@ def start():
                                                                     f, text="no")
                                                                 o4_window = f.create_window(
                                                                     850, 500, window=o4, anchor=NW)
+                                                                st.yview(END)
 
                                                                 def sudokuOpen():
                                                                     o3.destroy()
@@ -502,6 +529,7 @@ def start():
                                                                 o1.destroy()
                                                                 o2.destroy()
                                                                 paper()
+                                                                st.yview(END)
 
                                                             o1.configure(
                                                                 command=chestLock)
@@ -529,6 +557,7 @@ def start():
                                                 st.insert(
                                                     END, "\n There is nothing else here")
                                                 TrailAction()
+                                                st.yview(END)
 
                                             c10.configure(command=seeCart)
                                             c11.configure(command=nothingElse)
