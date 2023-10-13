@@ -1,4 +1,4 @@
-# Contributing to weatherforecast
+# Contributing to was_a_game
 Welcome! Thank you for showing interest in this repo! These are some rules that you must follow to contribute to this repo:
 
 ## Contributing Rules
