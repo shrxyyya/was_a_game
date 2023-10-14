@@ -107,11 +107,11 @@ def start():
 
                         def read():
                             l = []
-                            with open('feedback.txt', "r")as myfile:
+                            with open('assets/feedback.txt', "r")as myfile:
                                 l.append(myfile.read())
                             g = T.get()
                             l.append(g)
-                            with open('feedback.txt', "w") as myfile:
+                            with open('assets/feedback.txt', "w") as myfile:
                                 for i in l:
                                    myfile.write("%s\n" % i)
                         h.configure(command=read)
