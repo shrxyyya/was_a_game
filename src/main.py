@@ -5,6 +5,7 @@ from PIL import ImageTk, Image
 import os
 # MAIN WINDOW
 gg = Tk()
+gg.state("zoomed")
 gg.title("Text Based Adverture game")
 f = Canvas(gg, width=1270, height=800)
 f.pack(fill="both", expand=True)
@@ -16,6 +17,7 @@ img = ImageTk.PhotoImage(Image.open(
     current_directory+"/assets/images/castle1.jpg"))
 f.create_image(0, 0, anchor=NW, image=img)
 d = Button(gg, text="start", fg="orange", bg="purple", font="bold")
+d_quit = Button(gg, text="quit", fg="orange", bg="purple", font="bold")
 img1 = ImageTk.PhotoImage(Image.open(
     current_directory+"/assets/images/ransacked1.jpg"))
 img3 = ImageTk.PhotoImage(Image.open(
@@ -35,9 +37,9 @@ I5 = Label(gg, image=img5)
 I7 = Label(gg, image=img7)
 I8 = Label(gg, image=img8)
 
-
 def start():
     d.destroy()
+    d_quit.destroy()
     st = ScrolledText(gg, width=150, height=20)
     c_window = f.create_window(20, 10, anchor=NW, window=st)
     st.insert(END, "WELCOME TO TEXT BASED ADVENTURE GAME")
@@ -603,5 +605,7 @@ def start():
 
 
 d.configure(command=start)
+d_quit.configure(command=gg.destroy)
 d_window = f.create_window(100, 0, anchor=NW, window=d)
+d_quit_window = f.create_window(100, 40,anchor=NW, window=d_quit)
 gg.mainloop()
